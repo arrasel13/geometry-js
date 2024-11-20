@@ -1,9 +1,9 @@
 function calculatePentagonArea() {
     const pentagonP = document.getElementById('pentagon-p');
-    const pentagonPValue = pentagonP.value;
+    const pentagonPValue = parseFloat(pentagonP.value);
     
     const pentagonB = document.getElementById('pentagon-b');
-    const pentagonBValue = pentagonB.value;
+    const pentagonBValue = parseFloat(pentagonB.value);
 
     const area = 0.5 * pentagonPValue * pentagonBValue;
 
