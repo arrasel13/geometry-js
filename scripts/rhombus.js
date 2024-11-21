@@ -11,6 +11,16 @@
 //     rhombusArea.innerText = area;
 // }
 
+document.getElementById('rhombus-div').addEventListener('mouseover', function () {
+    const rhombusDiv = document.getElementById('rhombus-div');
+    rhombusDiv.style.backgroundColor = '#b9eee1';
+});
+
+document.getElementById('rhombus-div').addEventListener('mouseout', function () {
+    const rhombusDiv = document.getElementById('rhombus-div');
+    rhombusDiv.style.backgroundColor = '#fff';
+});
+
 function calculateRhombusArea() {
     const rhombusd1Value = getInputValueById('rhombus-d1');
     const rhombusd2Value = getInputValueById('rhombus-d2');

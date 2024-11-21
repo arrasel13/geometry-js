@@ -11,6 +11,16 @@
 //     parallelogramArea.innerText = area;
 // }
 
+document.getElementById('parallelogram-div').addEventListener('mouseover', function () {
+    const parallelogramDiv = document.getElementById('parallelogram-div');
+    parallelogramDiv.style.backgroundColor = '#fec9d7';
+});
+
+document.getElementById('parallelogram-div').addEventListener('mouseout', function () {
+    const parallelogramDiv = document.getElementById('parallelogram-div');
+    parallelogramDiv.style.backgroundColor = '#fff';
+});
+
 function calculateParallelogramArea() {
     const parallelogramBaseValue = getInputValueById('parallelogram-base');
     const parallelogramHeightValue = getInputValueById('parallelogram-height');

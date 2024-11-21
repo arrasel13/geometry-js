@@ -11,6 +11,16 @@
 //     rectangleArea.innerText = area;
 // }
 
+document.getElementById('rectangle-div').addEventListener('mouseover', function () {
+    const rectangleDiv = document.getElementById('rectangle-div');
+    rectangleDiv.style.backgroundColor = '#ff91ad';
+});
+
+document.getElementById('rectangle-div').addEventListener('mouseout', function () {
+    const rectangleDiv = document.getElementById('rectangle-div');
+    rectangleDiv.style.backgroundColor = '#fff';
+});
+
 function calculateRectangleArea() {
     const rectangleWidth = getInputValueById('rectangle-width');
     const rectangleLength = getInputValueById('rectangle-length');

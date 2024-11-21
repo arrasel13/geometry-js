@@ -12,6 +12,16 @@
 //     triangleArea.innerText = area;
 // }
 
+document.getElementById('triangle-div').addEventListener('mouseover', function () {
+    const triangleDiv = document.getElementById('triangle-div');
+    triangleDiv.style.backgroundColor = '#ff5883';
+});
+
+document.getElementById('triangle-div').addEventListener('mouseout', function () {
+    const triangleDiv = document.getElementById('triangle-div');
+    triangleDiv.style.backgroundColor = '#fff';
+});
+
 function calculateTriangleArea() {
     const baseValue = getInputValueById('triangle-base');
     const heightValue = getInputValueById('triangle-height');

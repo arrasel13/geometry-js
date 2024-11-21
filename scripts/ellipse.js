@@ -13,6 +13,16 @@
 
 // }
 
+document.getElementById('ellipse-div').addEventListener('mouseover', function () {
+    const ellipseDiv = document.getElementById('ellipse-div');
+    ellipseDiv.style.backgroundColor = '#39b89a';
+});
+
+document.getElementById('ellipse-div').addEventListener('mouseout', function () {
+    const ellipseDiv = document.getElementById('ellipse-div');
+    ellipseDiv.style.backgroundColor = '#fff';
+});
+
 function calculateEllipseArea() {
     const PI = 3.1416;
     const ellipseAValue = getInputValueById('ellipse-a');

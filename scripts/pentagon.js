@@ -11,6 +11,16 @@
 //     pentagonArea.innerText = area;
 // }
 
+document.getElementById('pentagon-div').addEventListener('mouseover', function () {
+    const pentagonDiv = document.getElementById('pentagon-div');
+    pentagonDiv.style.backgroundColor = '#79d3be';
+});
+
+document.getElementById('pentagon-div').addEventListener('mouseout', function () {
+    const pentagonDiv = document.getElementById('pentagon-div');
+    pentagonDiv.style.backgroundColor = '#fff';
+});
+
 function calculatePentagonArea() {
     const pentagonPValue = getInputValueById('pentagon-p');
     const pentagonBValue = getInputValueById('pentagon-b');
