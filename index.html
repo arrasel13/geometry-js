@@ -7,6 +7,11 @@
     <title>Geometry Genius</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #area-lists li{
+            list-style-type: numeric;
+        }
+    </style>
 </head>
 
 <body class="m-8">
@@ -36,10 +41,6 @@
                                 placeholder="h"><span class="">cm</span>
                         </div>
 
-                        <div class="mb-3">
-                            <p class="text-2xl">Area: <span id="triangle-area">0</span> <span>cm<sup>2</sup></span></p>
-                        </div>
-
                         <div class="card-actions">
                             <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
@@ -62,10 +63,6 @@
                             <input id="rectangle-length" type="text"
                                 class="w-24 text-2xl border p-1 text-center gap-2 justify-center items-centerer rounded"
                                 placeholder="l"><span class="">cm</span>
-                        </div>
-
-                        <div class="mb-3">
-                            <p class="text-2xl">Area: <span id="rectangle-area">0</span> <span>cm<sup>2</sup></span></p>
                         </div>
 
                         <div class="card-actions">
@@ -92,10 +89,6 @@
                                 placeholder="h"><span class="">cm</span>
                         </div>
 
-                        <div class="mb-3">
-                            <p class="text-2xl">Area: <span id="parallelogram-area">0</span> <span>cm<sup>2</sup></span></p>
-                        </div>
-
                         <div class="card-actions">
                             <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
@@ -118,10 +111,6 @@
                             <input id="rhombus-d2" type="text"
                                 class="w-24 text-2xl border p-1 text-center gap-2 justify-center items-centerer rounded"
                                 placeholder="d2"><span class="">cm</span>
-                        </div>
-
-                        <div class="mb-3">
-                            <p class="text-2xl">Area: <span id="rhombus-area">0</span> <span>cm<sup>2</sup></span></p>
                         </div>
 
                         <div class="card-actions">
@@ -148,10 +137,6 @@
                                 placeholder="b"><span class="">cm</span>
                         </div>
                 
-                        <div class="mb-3">
-                            <p class="text-2xl">Area: <span id="pentagon-area">0</span> <span>cm<sup>2</sup></span></p>
-                        </div>
-                
                         <div class="card-actions">
                             <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
@@ -176,22 +161,25 @@
                                 placeholder="b"><span class="">cm</span>
                         </div>
                 
-                        <div class="mb-3">
-                            <p class="text-2xl">Area: <span id="ellipse-area">0</span> <span>cm<sup>2</sup></span></p>
-                        </div>
-                
                         <div class="card-actions">
                             <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
 
-
             </div>
 
             <!-- Area calculation container -->
             <div class="w-96 border border-gray-500 rounded-md">
                 <h3 class="text-3xl text-center p-4">Area Calculation</h3>
+                <ul id="area-lists" class="p-8 flex flex-col gap-3">
+                    <li><p class="text-2xl">Triangle: <span id="triangle-area">0</span> <span>cm<sup>2</sup></span></p></li>
+                    <li><p class="text-2xl">Rectangle: <span id="rectangle-area">0</span> <span>cm<sup>2</sup></span></p></li>
+                    <li><p class="text-2xl">Parallelogram: <span id="parallelogram-area">0</span> <span>cm<sup>2</sup></span></p></li>
+                    <li><p class="text-2xl">Rhombus: <span id="rhombus-area">0</span> <span>cm<sup>2</sup></span></p></li>
+                    <li><p class="text-2xl">Pentagon: <span id="pentagon-area">0</span> <span>cm<sup>2</sup></span></p></li>
+                    <li><p class="text-2xl">Ellipse: <span id="ellipse-area">0</span> <span>cm<sup>2</sup></span></p></li>
+                </ul>
             </div>
         </div>
     </main>
